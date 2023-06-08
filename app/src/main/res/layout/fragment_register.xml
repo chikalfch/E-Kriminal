@@ -57,7 +57,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:hint="@string/nama_lengkap">
+                android:hint="@string/hint_email">
+
             </com.google.android.material.textfield.TextInputEditText>
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -77,8 +78,8 @@
                 android:id="@+id/txtPswInput"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="number"
-                android:hint="@string/no_hp">
+                android:inputType="text"
+                android:hint="@string/nama">
 
             </com.google.android.material.textfield.TextInputEditText>
 
@@ -122,8 +123,8 @@
                 android:id="@+id/txtPasswordR"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="numberPassword"
-                android:hint="@string/hint_password">
+                android:inputType="number"
+                android:hint="@string/no_hp">
 
             </com.google.android.material.textfield.TextInputEditText>
 
@@ -146,7 +147,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="numberPassword"
-                android:hint="@string/konfirm_password">
+                android:hint="@string/password">
 
             </com.google.android.material.textfield.TextInputEditText>
 
