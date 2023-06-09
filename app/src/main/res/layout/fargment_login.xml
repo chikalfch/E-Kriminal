@@ -90,25 +90,21 @@ android:background="#0090F8">
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:src="@drawable/btn_login"
+        android:src="@drawable/bg_btn_lapor"
         android:text="@string/btn_login"
-        app:layout_constraintEnd_toEndOf="@+id/pswInput"
         app:layout_constraintStart_toStartOf="@+id/pswInput"
         app:layout_constraintTop_toBottomOf="@+id/pswInput" />
 
-    <TextView
-        android:id="@+id/txtOption"
+    <Button
+        android:id="@+id/btnRegis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/txt_option_register"
-        android:textColor="#ffff"
-        android:textSize="14dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnLogin">
+        android:src="@drawable/bg_btn_lapor"
+        android:text="@string/btn_regis"
+        app:layout_constraintBottom_toBottomOf="@+id/btnLogin"
+        app:layout_constraintEnd_toEndOf="@+id/pswInput"
+        app:layout_constraintTop_toTopOf="@+id/btnLogin" />
 
-    </TextView>
     <ProgressBar
         android:id="@+id/loading"
         android:layout_width="match_parent"

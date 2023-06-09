@@ -55,6 +55,7 @@ dependencies {
     //koneksi mysql
     implementation 'com.android.volley:volley:1.2.1'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+//    implementation "org.jetbrains.kotlin:kotlin-stdIib:$kotlin_vesion"
 
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.1'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1'
