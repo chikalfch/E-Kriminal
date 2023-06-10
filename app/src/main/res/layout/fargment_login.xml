@@ -28,11 +28,12 @@ android:background="#0090F8">
         android:id="@+id/txtTittle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/light"
         android:text="@string/txt_title"
+        android:textColor="#ffff"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:textColor="#ffff"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/ic_Profile" />
@@ -44,11 +45,6 @@ android:background="#0090F8">
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginTop="32dp"
-        app:boxCornerRadiusBottomEnd="30dp"
-        app:boxCornerRadiusBottomStart="30dp"
-        app:boxCornerRadiusTopEnd="30dp"
-        app:boxCornerRadiusTopStart="30dp"
-        android:outlineAmbientShadowColor="@color/black"
         app:layout_constraintTop_toTopOf="@id/txtTittle">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -57,7 +53,8 @@ android:background="#0090F8">
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:hint="@string/hint_email"
-            android:inputType="textEmailAddress">
+            android:inputType="textEmailAddress"
+            android:fontFamily="@font/regular">
 
         </com.google.android.material.textfield.TextInputEditText>
     </com.google.android.material.textfield.TextInputLayout>
@@ -69,17 +66,14 @@ android:background="#0090F8">
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginTop="32dp"
-        app:boxCornerRadiusBottomEnd="30dp"
-        app:boxCornerRadiusBottomStart="30dp"
-        app:boxCornerRadiusTopEnd="30dp"
-        app:boxCornerRadiusTopStart="30dp"
         app:layout_constraintTop_toBottomOf="@+id/emailInput">
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txtPswInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
-            android:hint="@string/password">
+            android:hint="@string/password"
+            android:fontFamily="@font/regular">
 
         </com.google.android.material.textfield.TextInputEditText>
     </com.google.android.material.textfield.TextInputLayout>
@@ -90,8 +84,10 @@ android:background="#0090F8">
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:src="@drawable/bg_btn_lapor"
+        android:fontFamily="@font/light"
+        android:theme="@style/styleButton"
         android:text="@string/btn_login"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="@+id/pswInput"
         app:layout_constraintTop_toBottomOf="@+id/pswInput" />
 
@@ -99,11 +95,14 @@ android:background="#0090F8">
         android:id="@+id/btnRegis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/bg_btn_lapor"
         android:text="@string/btn_regis"
+        android:fontFamily="@font/light"
+        android:theme="@style/styleButton"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="@+id/btnLogin"
         app:layout_constraintEnd_toEndOf="@+id/pswInput"
         app:layout_constraintTop_toTopOf="@+id/btnLogin" />
+<!--    android:backgroundTint="@drawable/bg_btn_lapor"-->
 
     <ProgressBar
         android:id="@+id/loading"

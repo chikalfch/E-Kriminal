@@ -28,4 +28,10 @@
     <style name="strokeColor">
         <item name="android:background">@color/grey_300</item>
     </style>
+    <style name="styleButton"> 
+        <item name="android:backgroundTint">@color/black
+    </item>
+    </style>
+
+
 </resources>

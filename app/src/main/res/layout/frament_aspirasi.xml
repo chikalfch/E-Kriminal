@@ -86,7 +86,7 @@
                     android:layout_marginTop="@dimen/spacing_mxlarge"
                     android:layout_marginEnd="@dimen/activity_vertical_margin"
                     android:fontFamily="@font/regular"
-                    android:text="Judul Laporan"
+                    android:text="Judul Aspirasi"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/view" />
@@ -136,78 +136,19 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/tvLabelCategory" />
 
-                <TextView
-                    android:id="@+id/tvLabelAmount"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/activity_vertical_margin"
-                    android:layout_marginTop="@dimen/spacing_mxlarge"
-                    android:layout_marginEnd="@dimen/activity_vertical_margin"
-                    android:fontFamily="@font/regular"
-                    android:text="tanggal Kejadian"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/etCategory" />
-
-                <EditText
-                    android:id="@+id/etAmount"
-                    style="@style/editTextStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/spacing_xxlarge"
-                    android:layout_margin="@dimen/activity_vertical_margin"
-                    android:fontFamily="@font/light"
-                    android:hint="13 mei 2023"
-                    android:inputType="number"
-                    android:paddingStart="@dimen/activity_horizontal_margin"
-                    android:paddingEnd="@dimen/activity_horizontal_margin"
-                    android:textSize="@dimen/font_16"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tvLabelAmount" />
-
-                <TextView
-                    android:id="@+id/tvLabelDueDate"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/activity_vertical_margin"
-                    android:layout_marginTop="@dimen/spacing_mxlarge"
-                    android:layout_marginEnd="@dimen/activity_vertical_margin"
-                    android:fontFamily="@font/regular"
-                    android:text="Tambahkan Gambar"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/etAmount" />
-
-                <EditText
-                    android:id="@+id/etDueDate"
-                    style="@style/editTextStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/spacing_xxlarge"
-                    android:layout_margin="@dimen/activity_vertical_margin"
-                    android:editable="false"
-                    android:focusable="false"
-                    android:fontFamily="@font/light"
-                    android:hint="Image Max 10MB"
-                    android:paddingStart="@dimen/activity_horizontal_margin"
-                    android:paddingEnd="@dimen/activity_horizontal_margin"
-                    android:textSize="@dimen/font_16"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tvLabelDueDate" />
-
                 <Button
                     android:id="@+id/btnSave"
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
                     android:layout_marginStart="16dp"
-                    android:layout_marginTop="28dp"
+                    android:layout_marginTop="32dp"
                     android:layout_marginEnd="16dp"
                     android:background="@drawable/bg_button_rounded"
                     android:text="Submit"
                     android:textColor="@color/white"
-                    app:layout_constraintEnd_toEndOf="@+id/etDueDate"
-                    app:layout_constraintStart_toStartOf="@+id/etDueDate"
-                    app:layout_constraintTop_toBottomOf="@id/etDueDate" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/etCategory" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
