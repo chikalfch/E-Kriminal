@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:text="@string/txt_titleR"
-            android:textSize="14dp"
+            android:textSize="14sp"
             android:fontFamily="@font/light"
             android:textStyle="bold"
             android:textColor="#000000"
@@ -40,24 +40,44 @@
             app:layout_constraintTop_toBottomOf="@id/ic_Profile" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/namaInput"
+            android:id="@+id/emailInputR"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginEnd="32dp"
             android:layout_marginTop="32dp"
             android:outlineAmbientShadowColor="@color/black"
-            app:layout_constraintTop_toTopOf="@id/txtTittleR">
+            app:layout_constraintTop_toTopOf="@+id/txtTittleR"
+            tools:layout_editor_absoluteX="32dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/txtEmailInput"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:hint="@string/hint_email"
-                android:fontFamily="@font/regular">
+                android:fontFamily="@font/regular"
+                android:hint="@string/hint_email">
 
             </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/namaInputR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/emailInputR"
+            tools:layout_editor_absoluteX="32dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtNamaInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:hint="@string/nama"
+                android:inputType="textEmailAddress" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -68,15 +88,15 @@
             android:layout_marginEnd="32dp"
             android:layout_marginTop="32dp"
 
-            app:layout_constraintTop_toBottomOf="@+id/namaInput">
+            app:layout_constraintTop_toBottomOf="@+id/namaInputR">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/txtNamaInput"
+                android:id="@+id/txtPhone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/nama"
-                android:inputType="text"
-                android:fontFamily="@font/regular">
+                android:fontFamily="@font/regular"
+                android:hint="@string/no_hp"
+                android:inputType="text">
 
             </com.google.android.material.textfield.TextInputEditText>
 
@@ -84,39 +104,21 @@
 
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/emailInputR"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginEnd="32dp"
-            android:layout_marginTop="32dp"
-
-            app:layout_constraintTop_toBottomOf="@+id/noInput">
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/txtEmailInputR"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"
-                android:hint="@string/hint_email"
-                android:fontFamily="@font/regular"/>
-        </com.google.android.material.textfield.TextInputLayout>
-
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/paswordInputR"
+            android:id="@+id/passwordR"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginEnd="32dp"
             android:layout_marginTop="32dp"
             app:layout_constraintTop_toBottomOf="@+id/noInput">
+
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/txtPhone"
+                android:id="@+id/txtPass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="number"
-                android:hint="@string/no_hp"
-                android:fontFamily="@font/regular">
+                android:fontFamily="@font/regular"
+                android:hint="@string/password"
+                android:inputType="number">
 
             </com.google.android.material.textfield.TextInputEditText>
 
@@ -129,13 +131,13 @@
             android:layout_marginStart="32dp"
             android:layout_marginEnd="32dp"
             android:layout_marginTop="32dp"
-            app:layout_constraintTop_toBottomOf="@+id/paswordInputR">
+            app:layout_constraintTop_toBottomOf="@+id/passwordR">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/txtKonfirmPasword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="numberPassword"
-                android:hint="@string/password"
+                android:hint="@string/konfirmasi_password"
                 android:fontFamily="@font/regular">
 
             </com.google.android.material.textfield.TextInputEditText>
@@ -163,7 +165,7 @@
             android:layout_height="wrap_content"
             android:text="@string/txt_option_login"
             android:textColor="#000000"
-            android:textSize="14dp"
+            android:textSize="14sp"
             android:fontFamily="@font/medium"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -176,10 +178,17 @@
             android:id="@+id/loading"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="350dp"
             android:layout_alignParentBottom="true"
             android:layout_gravity="center"
-            android:visibility="gone"/>
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
